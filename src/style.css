@@ -5,7 +5,34 @@
     --color-purple: #5221E6;
     --color-neutral-300: #C4C4C4;
     --color-indigo-950: #181823;
+    --color-gray-400: #808080;
 
+    --text-banner-title: 78px;
     --container-7xl: 1464px;
     --font-sen: "Sen", sans-serif;
+}
+
+@layer components {
+    body {
+        font-family: var(--font-sen);
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    .banner-title {
+        font-size: 32px;
+
+        @media (min-width: 768px) {
+            font-size: 56px;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 78px;
+        }
+    }
+}
+
+[alt=""] {
+    filter: blur(10px);
+    opacity: 0.6;
 }
