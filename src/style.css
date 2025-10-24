@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-purple: #5221E6;
+    --color-neutral-300: #C4C4C4;
+    --color-indigo-950: #181823;
+
+    --container-7xl: 1464px;
+    --font-sen: "Sen", sans-serif;
+}
