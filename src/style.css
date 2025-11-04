@@ -17,7 +17,7 @@
     --text-3xl: 32px;
     --text-5xl: 55px;
     --text-9xl: 117px;
-    --text-banner-title: 78px;
+    
     --container-4xl: 1136px; 
     --container-5xl: 1320px;
     --container-7xl: 1464px;
@@ -26,12 +26,6 @@
 }
 
 @layer components {
-    body {
-        font-family: var(--font-sen);
-        background-color: var(--color-black);
-        color: var(--color-white);
-    }
-
     .banner-title {
         font-size: 32px;
 
