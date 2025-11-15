@@ -5,12 +5,30 @@ import handlebars from 'vite-plugin-handlebars';
 import FullReload from 'vite-plugin-full-reload'
 
 export default defineConfig({
-  base: '/dev-Robin.W/',
+  base: './',
   resolve: {
     alias: {
       "@": resolve(__dirname, "src")
     }
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/js/main.js',
+        chunkFileNames: 'assets/js/[name].js',
+        assetFileNames: ({ name }) => {
+          if (name && name.endsWith('.css')) {
+            return 'assets/css/style.css';
+          }
+          if (name && name.includes('img')) {
+            return 'assets/img/[name][extname]';
+          }
+          return 'assets/[name][extname]';
+        }
+      }
+    }
+  },
+  
   plugins: [
     tailwindcss(),
     handlebars({
@@ -18,4 +36,5 @@ export default defineConfig({
     }),
     FullReload(["src/partials/**/*"])
   ],
+  
 })
