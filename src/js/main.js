@@ -1,6 +1,6 @@
-import '../css/style.css'
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import '../css/style.css'
 
 window.addEventListener('load', () => {
 
