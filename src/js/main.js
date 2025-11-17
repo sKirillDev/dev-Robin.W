@@ -1,4 +1,6 @@
 import '../css/style.css'
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 window.addEventListener('load', () => {
 
