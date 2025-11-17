@@ -4,7 +4,10 @@
         <p class="text-lg text-gray-600">{{description}}</p>
         <a href="#" class="text-indigo-950 mt-auto pb-1 border-b border-gray-500">{{link}}</a>
     </div>
-    <div>   
-        <img src="assets/img/{{image}}" class="object-cover w-full h-112.5 md:h-full" alt="{{alt}}">
+    <div>
+        <picture class="object-cover w-full h-112.5 md:h-full">
+            <source srcset="./assets/img/{{image-webp}}">
+            <img src="./assets/img/{{image-png}}" alt="{{alt}}">
+        </picture>
     </div>
 </section>
