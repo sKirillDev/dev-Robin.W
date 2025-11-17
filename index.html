@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <title>Robin.W layout</title>
   <script type="module" crossorigin src="./assets/js/main.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/css/style.css">
@@ -14,7 +13,7 @@
 <body class="flex flex-col min-h-screen bg-black text-white font-sen overflow-x-hidden">
   <header class="max-w-7xl mx-auto w-full px-5 md:px-10 lg:px-18 flex items-center relative py-6 md:py-0 md:-mb-22 z-20">
       <div class="w-19.5 h-6">
-          <img src="assets/img/logo.svg" alt="logo">
+          <img src="./assets/img/logo.svg" alt="logo">
       </div>
       <div id="mobile-container" class="bg-indigo-950 ml-auto hidden md:block absolute md:static md:bg-transparent top-18 left-0 w-full md:w-auto">
           <nav class="flex flex-col md:flex-row">
@@ -30,9 +29,12 @@
   </header>
   <main>  <section class="max-w-7xl mx-auto w-full relative flex flex-col md:flex-row justify-end md:pt-42 pb-12 md:pb-21 lg:before:absolute lg:before:w-2/3 lg:before:min-h-full lg:before:top-0 lg:before:bg-indigo-950">
       <picture class="mx-auto md:mx-0 md:absolute left-0 top-41.5">
-          <source media="(min-width: 1024px)" srcset="assets/img/banner-xl.png">
-          <source media="(min-width: 768px)" srcset="assets/img/banner-md.png">
-          <img src="assets/img/banner-xs.png">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="./assets/img/banner-xl.webp">
+          <source type="image/png" media="(min-width: 1024px)" srcset="./assets/img/banner-xl.png">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./assets/img/banner-md.webp">
+          <source type="image/png" media="(min-width: 768px)" srcset="./assets/img/banner-md.png">
+          <source srcset="./assets/img/banner-sm.webp">
+          <img src="./assets/img/banner-sm.png" alt="banner">
       </picture>
       <div class="md:w-102 lg:w-3xl px-5 lg:px-3.75 md:mr-9 pt-12 md:py-35 z-10">
           <h1 class="banner-title font-bold mb-8 leading-[1.2]">I’m Robin Williams. A Product Designer <span class="text-gray-400">based in Italy.</span></h1>
@@ -64,8 +66,11 @@
           <p class="text-lg text-gray-600">I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, &amp; hospitality.</p>
           <a href="#" class="text-indigo-950 mt-auto pb-1 border-b border-gray-500">More about me</a>
       </div>
-      <div>   
-          <img src="assets/img/philosophy.png" class="object-cover w-full h-112.5 md:h-full" alt="philosophy">
+      <div>
+          <picture class="object-cover w-full h-112.5 md:h-full">
+              <source srcset="./assets/img/philosophy.webp">
+              <img src="./assets/img/philosophy.png" alt="philosophy">
+          </picture>
       </div>
   </section>  <section class="max-w-7xl mx-auto w-full px-5 md:px-10 lg:px-18 py-16 md:py-20 lg:py-30 grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-3">
           <div class="mb-12 lg:mb-0 lg:pr-15">
@@ -172,24 +177,36 @@
                   <h2 class="text-3xl md:text-5xl font-bold mb-8 lg:mb-14">Work that I’ve done for the past 8 years</h2>
               </div>
               <div class="bg-indigo-950 pb-10">
-                  <img src="assets/img/project-1.png" class="mb-10 w-full" alt="project">
+                  <picture class="block mb-10 w-full" >
+                      <source srcset="./assets/img/project-1.webp">
+                      <img src="./assets/img/project-1.png" alt="project">
+                  </picture>
                   <h3 class="text-2xl font-bold leading-normal mb-3.25 px-8">Restaurant Website Design</h3>
                   <p class="text-gray-500 text-lg px-8">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
               </div>
               <div class="bg-indigo-950 pb-10">
-                  <img src="assets/img/project-2.png" class="mb-10 w-full" alt="project">
+                  <picture class="block mb-10 w-full" >
+                      <source srcset="./assets/img/project-2.webp">
+                      <img src="./assets/img/project-2.png" alt="project">
+                  </picture>
                   <h3 class="text-2xl font-bold leading-normal mb-3.25 px-8">Restaurant Website Design</h3>
                   <p class="text-gray-500 text-lg px-8">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
               </div>
           </div>
           <div class="grid gap-12 lg:gap-6">
               <div class="bg-indigo-950 pb-10">
-                  <img src="assets/img/project-3.png" class="mb-10 w-full" alt="project">
+                  <picture class="block mb-10 w-full" >
+                      <source srcset="./assets/img/project-3.webp">
+                      <img src="./assets/img/project-3.png" alt="project">
+                  </picture>
                   <h3 class="text-2xl font-bold leading-normal mb-3.25 px-8">Restaurant Website Design</h3>
                   <p class="text-gray-500 text-lg px-8">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
               </div>
               <div class="bg-indigo-950 pb-10">
-                  <img src="assets/img/project-4.png" class="mb-10 w-full" alt="project">
+                  <picture class="block mb-10 w-full" >
+                      <source srcset="./assets/img/project-4.webp">
+                      <img src="./assets/img/project-4.png" alt="project">
+                  </picture>
                   <h3 class="text-2xl font-bold leading-normal mb-3.25 px-8">Restaurant Website Design</h3>
                   <p class="text-gray-500 text-lg px-8">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
               </div>
@@ -201,18 +218,24 @@
           <p class="text-lg text-gray-600">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
           <a href="#" class="text-indigo-950 mt-auto pb-1 border-b border-gray-500">Follow me on IG</a>
       </div>
-      <div>   
-          <img src="assets/img/instagram.png" class="object-cover w-full h-112.5 md:h-full" alt="instagram">
+      <div>
+          <picture class="object-cover w-full h-112.5 md:h-full">
+              <source srcset="./assets/img/instagram.webp">
+              <img src="./assets/img/instagram.png" alt="instagram">
+          </picture>
       </div>
   </section>   <section class="max-w-4xl px-5 md:px-10 lg:px-18 mx-auto py-16 md:py-20 lg:py-30">
            <h2 class="text-3xl md:text-5xl font-bold mb-6">Dribbble</h2>
            <p class="text-lg text-gray-500 max-w-147 mb-10">Each dribbble shot is made with love and care. Do check out my
                work on Dribbble. Likes and comments are appreciated.</p>
            <a href="#" class="pb-1 border-b border-gray-500">Follow me on Dribbble</a>
-           <picture>
-               <source srcset="assets/img/dribbble.png" media="(min-width: 1024px)">
-               <source srcset="assets/img/dribbble-md.png" media="(min-width: 768px)">
-               <img src="assets/img/dribbble-xs.png" alt="dribbble" class="mt-30 mb-20 lg:mb-30 mx-auto md:mx-0">
+           <picture class="block mt-30 mb-20 lg:mb-30 mx-auto md:mx-0">
+              <source type="image/webp" srcset="./assets/img/dribbble-xl.webp" media="(min-width: 1024px)">
+              <source type="image/png" srcset="./assets/img/dribbble-xl.png" media="(min-width: 1024px)">
+              <source type="image/webp" srcset="./assets/img/dribbble-md.webp" media="(min-width: 768px)">
+              <source type="image/png" srcset="./assets/img/dribbble-md.png" media="(min-width: 768px)">
+              <source srcset="./assets/img/dribbble-xs.webp">
+              <img src="./assets/img/dribbble-xs.png" alt="dribbble">
            </picture>
    </section>  <section class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 md:gap-6 items-start px-5 md:px-10 lg:px-18 py-16 md:py-20 lg:py-30">
           <div>
@@ -224,7 +247,10 @@
           <div class="grid gap-y-12 md:gap-y-16 lg:gap-y-30">
               <a href="#" class="block group">
                   <div class="overflow-hidden">
-                      <img src="assets/img/blog-1.png" class="group-hover:scale-125 duration-700" alt="blog-1">
+                      <picture class="block group-hover:scale-125 duration-700">
+                          <source srcset="./assets/img/blog-1.webp">
+                          <img src="./assets/img/blog-1.png" alt="blog-1">
+                      </picture>
                   </div>
                   <span class="block border border-gray-600 p-8 lg:p-16">
                       <span class="block text-2xl font-bold mb-16">‘’Robin is one of the best designers I have worked with in my
@@ -236,7 +262,10 @@
               </a>
               <a href="#" class="block group">
                   <div class="overflow-hidden">
-                      <img src="assets/img/blog-2.png" class="group-hover:scale-125 duration-700" alt="blog-2">
+                      <picture class="block group-hover:scale-125 duration-700">
+                          <source srcset="./assets/img/blog-2.webp">
+                          <img src="./assets/img/blog-2.png" alt="blog-2">
+                      </picture>
                   </div>
                   <span class="block border border-gray-600 p-8 lg:p-16">
                       <span class="block text-2xl font-bold mb-16">‘’I think Robin has an incredible gift. It has been an absolute
@@ -247,7 +276,10 @@
               </a>
               <a href="#" class="block group">
                   <div class="overflow-hidden">
-                      <img src="assets/img/blog-3.png" class="group-hover:scale-125 duration-700" alt="blog-3">
+                      <picture class="block group-hover:scale-125 duration-700">
+                          <source srcset="./assets/img/blog-3.webp">
+                          <img src="./assets/img/blog-3.png" alt="blog-3">
+                      </picture>
                   </div>
                   <span class="block border border-gray-600 p-8 lg:p-16">
                       <span class="block text-2xl font-bold mb-16">‘’All I can say that, Robin is a phenomenal designer. The
@@ -270,28 +302,76 @@
               </nav>
               <div>
                   <div id="content-1" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                      <img src="assets/img/italy-1.png" class="w-100 mx-auto" alt="Italy">
-                      <img src="assets/img/italy-2.png" class="w-100 mx-auto" alt="Italy">
-                      <img src="assets/img/italy-3.png" class="w-100 mx-auto" alt="Italy">
-                      <img src="assets/img/italy-4.png" class="w-100 mx-auto" alt="Italy">
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/italy-1.webp">
+                          <img src="./assets/img/italy-1.png" alt="Italy">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/italy-2.webp">
+                          <img src="./assets/img/italy-2.png" alt="Italy">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/italy-3.webp">
+                          <img src="./assets/img/italy-3.png" alt="Italy">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/italy-4.webp">
+                          <img src="./assets/img/italy-4.png" alt="Italy">
+                      </picture>
                   </div>
                   <div id="content-2" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 hidden">
-                      <img src="assets/img/australia-1.png" class="w-100 mx-auto" alt="Australia">
-                      <img src="assets/img/australia-2.png" class="w-100 mx-auto" alt="Australia">
-                      <img src="assets/img/australia-3.png" class="w-100 mx-auto" alt="Australia">
-                      <img src="assets/img/australia-4.png" class="w-100 mx-auto" alt="Australia">
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/australia-1.webp">
+                          <img src="./assets/img/australia-1.png" alt="Australia">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/australia-2.webp">
+                          <img src="./assets/img/australia-2.png" alt="Australia">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/australia-3.webp">
+                          <img src="./assets/img/australia-3.png" alt="Australia">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/australia-4.webp">
+                          <img src="./assets/img/australia-4.png" alt="Australia">
+                      </picture>
                   </div>
                   <div id="content-3" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 hidden">
-                      <img src="assets/img/india-1.png" class="w-100 mx-auto" alt="India">
-                      <img src="assets/img/india-2.png" class="w-100 mx-auto" alt="India">
-                      <img src="assets/img/india-3.png" class="w-100 mx-auto" alt="India">
-                      <img src="assets/img/india-4.png" class="w-100 mx-auto" alt="India">
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/india-1.webp">
+                          <img src="./assets/img/india-1.png" alt="India">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/india-2.webp">
+                          <img src="./assets/img/india-2.png" alt="India">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/india-3.webp">
+                          <img src="./assets/img/india-3.png" alt="India">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/india-4.webp">
+                          <img src="./assets/img/india-4.png" alt="India">
+                      </picture>
                   </div>
                   <div id="content-4" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 hidden">
-                      <img src="assets/img/brazil-1.png" class="w-100 mx-auto" alt="Brazil">
-                      <img src="assets/img/brazil-2.png" class="w-100 mx-auto" alt="Brazil">
-                      <img src="assets/img/brazil-3.png" class="w-100 mx-auto" alt="Brazil">
-                      <img src="assets/img/brazil-4.png" class="w-100 mx-auto" alt="Brazil">
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/brazil-1.webp">
+                          <img src="./assets/img/brazil-1.png" alt="Brazil">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/brazil-2.webp">
+                          <img src="./assets/img/brazil-2.png" alt="Brazil">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/brazil-3.webp">
+                          <img src="./assets/img/brazil-3.png" alt="Brazil">
+                      </picture>
+                      <picture class="mx-auto">
+                          <source srcset="./assets/img/brazil-4.webp">
+                          <img src="./assets/img/brazil-4.png" alt="Brazil">
+                      </picture>
                   </div>
               </div>
           </div>
@@ -322,7 +402,7 @@
       <div class="max-w-7xl mx-auto w-full px-5 md:px-10 lg:px-18 py-12 md:pt-20 md:pb-14 lg:py-20">
           <div class="md:flex mb-11.5">
           <div class="mb-12 md:mb-0">
-              <img src="assets/img/logo.svg" class="w-32.5 mb-8" alt="logo">
+              <img src="./assets/img/logo.svg" class="w-32.5 mb-8" alt="logo">
               <nav class="flex gap-4">
                   <a href="#" class="text-twitter">
                       <svg class="w-6 h-6">
@@ -393,7 +473,6 @@
           <path d="M19.65 3H4.35C3.63 3 3 3.54268 3 4.2663V19.7337C3 20.4573 3.63 21 4.35 21H19.65C20.37 21 21 20.4573 21 19.7337V4.2663C21 3.63313 20.37 3 19.65 3ZM8.31 18.4673H5.61V9.87435H8.31V18.4673ZM6.96 8.608C6.06 8.608 5.43 7.88442 5.43 7.07035C5.43 6.25628 6.15 5.53265 6.96 5.53265C7.77 5.53265 8.49 6.25628 8.49 7.07035C8.58 7.97488 7.86 8.608 6.96 8.608ZM18.3 18.4673H15.6V14.3066C15.6 13.3116 15.6 12.0452 14.25 12.0452C12.9 12.0452 12.63 13.1307 12.63 14.3066V18.5578H9.93001V9.96478H12.45V11.1407C12.81 10.4171 13.71 9.78392 14.97 9.78392C17.67 9.78392 18.21 11.593 18.21 13.8543V18.4673H18.3Z" fill="currentColor" />
       </symbol>
   </svg>  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 
 </html>
